@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>Payment & Delivery — DivineDripLuxe</title>
+  <style>
+    :root{--nude:#f3e5dc;--cream:#fffaf5;--text:#4b3b3b;--accent:#e4b8aa}
+    *{box-sizing:border-box;margin:0;padding:0} body{font-family:Poppins,Arial;background:var(--cream);color:var(--text)}
+    nav{display:flex;justify-content:space-between;align-items:center;padding:12px 18px;background:var(--nude)}
+    .nav-links{display:flex;gap:18px}
+    header{padding:40px 18px;text-align:center}
+    .container{max-width:940px;margin:18px auto;padding:0 18px}
+    .prices{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px}
+    .price-card{background:#fff;padding:12px;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.06)}
+    .btn{display:inline-block;background:var(--accent);color:#fff;padding:10px 14px;border-radius:10px}
+    footer{background:var(--nude);padding:18px;text-align:center;color:#5b4a4a;margin-top:20px}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="brand">DivineDripLuxe</div>
+    <div class="nav-links" id="navLinks"><a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">About</a><a href="how-to-order.html">How to Order</a><a href="payment.html">Payment</a><a href="contact.html">Contact</a></div>
+    <div class="hamburger" onclick="toggleMenu()"><div></div><div></div><div></div></div>
+  </nav>
+
+  <header><h1>Payment & Delivery</h1></header>
+
+  <main class="container">
+    <section>
+      <h2 style="margin-bottom:12px">Accepted Payment Methods</h2>
+      <p>We accept secure bank transfers and selected mobile payment options. Payment instructions are provided after you DM to order.</p>
+    </section>
+
+    <section style="margin-top:18px">
+      <h2>Product Prices</h2>
+      <div class="prices" style="margin-top:12px">
+        <div class="price-card"><strong>Product 1</strong><div>$1000</div></div>
+        <div class="price-card"><strong>Product 2</strong><div>$1500</div></div>
+        <div class="price-card"><strong>Product 3</strong><div>$1700</div></div>
+        <div class="price-card"><strong>Product 4</strong><div>$500</div></div>
+        <div class="price-card"><strong>Product 5</strong><div>$500</div></div>
+        <div class="price-card"><strong>Product 6</strong><div>$500</div></div>
+        <div class="price-card"><strong>Product 7</strong><div>$500</div></div>
+        <div class="price-card"><strong>Product 8</strong><div>Display photo (not for sale)</div></div>
+        <div class="price-card"><strong>Product 9</strong><div>$200</div></div>
+        <div class="price-card"><strong>Product 10</strong><div>$1200</div></div>
+        <div class="price-card"><strong>Product 11</strong><div>$1200</div></div>
+        <div class="price-card"><strong>Product 12</strong><div>$1200</div></div>
+      </div>
+    </section>
+
+    <section style="margin-top:18px">
+      <h2>Delivery</h2>
+      <p>Orders are shipped after payment confirmation. Delivery times and fees vary by location; DM for specific shipping estimates.</p>
+    </section>
+  </main>
+
+  <footer>© 2025 DivineDripLuxe · <a href="https://www.instagram.com/divinedripluxe" target="_blank">@divinedripluxe</a></footer>
+
+  <script>function toggleMenu(){document.getElementById('navLinks').classList.toggle('show')}</script>
+</body>
+</html>
