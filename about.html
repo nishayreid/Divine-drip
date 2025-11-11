@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>About — DivineDripLuxe</title>
+  <style>
+    :root{--blush:#f5d6d0;--nude:#f3e5dc;--cream:#fffaf5;--text:#4b3b3b;--accent:#e4b8aa}
+    *{box-sizing:border-box;margin:0;padding:0} body{font-family:Poppins,Arial;background:var(--cream);color:var(--text)}
+    nav{display:flex;justify-content:space-between;align-items:center;padding:12px 18px;background:var(--nude)} .hamburger{display:none}
+    .nav-links{display:flex;gap:18px}
+    @media(max-width:768px){.nav-links{display:none;position:absolute;top:56px;left:0;right:0;background:var(--nude);flex-direction:column;padding:12px 0}.nav-links.show{display:flex}.hamburger{display:flex;flex-direction:column;gap:4px;cursor:pointer}.hamburger div{width:24px;height:3px;background:var(--text)}}
+    header{padding:60px 18px;text-align:center;background:linear-gradient(135deg,var(--blush),var(--nude))}
+    .container{max-width:900px;margin:28px auto;padding:0 18px}
+    .btn{display:inline-block;background:var(--accent);color:#fff;padding:10px 16px;border-radius:10px}
+    footer{background:var(--nude);padding:18px;text-align:center;color:#5b4a4a;margin-top:30px}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="brand">DivineDripLuxe</div>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a><a href="shop.html">Shop</a><a href="about.html">About</a><a href="how-to-order.html">How to Order</a><a href="payment.html">Payment</a><a href="contact.html">Contact</a>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()"><div></div><div></div><div></div></div>
+  </nav>
+
+  <header><h1>About DivineDripLuxe</h1></header>
+
+  <main class="container">
+    <section>
+      <h2 style="margin-bottom:10px">Our Story</h2>
+      <p style="color:#6a5555">DivineDripLuxe began from a simple idea — everyday essentials should feel special. We curate items with style and purpose, focusing on quality and thoughtful presentation. Every order is packaged with care and attention.</p>
+    </section>
+
+    <section style="margin-top:28px">
+      <h2>Our Values</h2>
+      <p>Thoughtful curation · Quality materials · Friendly service · Fast responses</p>
+    </section>
+    <section style="margin-top:28px;text-align:center">
+      <a class="btn" href="shop.html">Browse Our Collection</a>
+    </section>
+  </main>
+
+  <footer>© 2025 DivineDripLuxe · <a href="https://www.instagram.com/divinedripluxe" target="_blank">@divinedripluxe</a></footer>
+
+  <script>function toggleMenu(){document.getElementById('navLinks').classList.toggle('show')}</script>
+</body>
+</html>
