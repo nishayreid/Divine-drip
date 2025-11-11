@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>DivineDripLuxe — Home</title>
+  <style>
+    :root{
+      --blush:#f5d6d0;--beige:#f9f4ef;--nude:#f3e5dc;--cream:#fffaf5;
+      --text:#4b3b3b;--accent:#e4b8aa;
+    }
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Poppins,system-ui,Arial; background:var(--cream); color:var(--text); line-height:1.5}
+    a{color:inherit;text-decoration:none}
+    /* nav */
+    nav{display:flex;align-items:center;justify-content:space-between;padding:12px 18px;background:var(--nude)}
+    .brand{font-weight:700}
+    .nav-links{display:flex;gap:18px}
+    .hamburger{display:none;flex-direction:column;gap:4px;cursor:pointer}
+    .hamburger div{width:24px;height:3px;background:var(--text)}
+    @media(max-width:768px){.nav-links{display:none;position:absolute;top:56px;left:0;right:0;background:var(--nude);flex-direction:column;padding:12px 0}.nav-links.show{display:flex}.hamburger{display:flex}}
+    /* hero */
+    header{padding:80px 18px;text-align:center;background:linear-gradient(135deg,var(--blush),var(--nude))}
+    header h1{font-size:2.4rem;margin-bottom:8px}
+    header p{max-width:760px;margin:0 auto 18px;color:#6a5555}
+    .btn{display:inline-block;background:var(--accent);color:#fff;padding:10px 18px;border-radius:10px;font-weight:600}
+    .container{max-width:1000px;margin:32px auto;padding:0 18px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+    .card{background:#fff;padding:14px;border-radius:12px;box-shadow:0 6px 18px rgba(0,0,0,0.06);text-align:left}
+    .card img{width:100%;height:180px;object-fit:cover;border-radius:10px}
+    footer{background:var(--nude);padding:22px;text-align:center;color:#5b4a4a;margin-top:30px}
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="brand">DivineDripLuxe</div>
+    <div class="nav-links" id="navLinks">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="about.html">About</a>
+      <a href="how-to-order.html">How to Order</a>
+      <a href="payment.html">Payment</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <div class="hamburger" onclick="toggleMenu()">
+      <div></div><div></div><div></div>
+    </div>
+  </nav>
+
+  <header>
+    <h1>DivineDripLuxe ✨</h1>
+    <p>Elevate your everyday essentials with a touch of luxe. Timeless, practical, and aesthetic must-haves curated just for you.</p>
+    <a class="btn" href="shop.html">Shop Now 🛍️</a>
+  </header>
+
+  <main class="container">
+    <section>
+      <h2 style="text-align:center;margin-bottom:10px">Featured Collection</h2>
+      <div class="grid">
+        <!-- Four featured products (use same images/prices as shop) -->
+        <div class="card">
+          <img src="https://github.com/nishayreid/Divine-drip-luxe/raw/main/IMG_4327.jpeg" alt="Product 1">
+          <div style="margin-top:10px;font-weight:700">Product 1 — $1000</div>
+          <div style="margin-top:8px"><a class="btn" href="https://www.instagram.com/divinedripluxe" target="_blank">DM to Order</a></div>
+        </div>
+
+        <div class="card">
+          <img src="https://github.com/nishayreid/Divine-drip-luxe/raw/main/IMG_4295.jpeg" alt="Product 2">
+          <div style="margin-top:10px;font-weight:700">Product 2 — $1500</div>
+          <div style="margin-top:8px"><a class="btn" href="https://www.instagram.com/divinedripluxe" target="_blank">DM to Order</a></div>
+        </div>
+
+        <div class="card">
+          <img src="https://github.com/nishayreid/Divine-drip-luxe/raw/main/IMG_4302.jpeg" alt="Product 3">
+          <div style="margin-top:10px;font-weight:700">Product 3 — $1700</div>
+          <div style="margin-top:8px"><a class="btn" href="https://www.instagram.com/divinedripluxe" target="_blank">DM to Order</a></div>
+        </div>
+
+        <div class="card">
+          <img src="https://github.com/nishayreid/Divine-drip-luxe/raw/main/IMG_4311.jpeg" alt="Product 4">
+          <div style="margin-top:10px;font-weight:700">Product 4 — $500</div>
+          <div style="margin-top:8px"><a class="btn" href="https://www.instagram.com/divinedripluxe" target="_blank">DM to Order</a></div>
+        </div>
+      </div>
+    </section>
+
+    <section style="margin-top:36px;text-align:center">
+      <h2>Why DivineDripLuxe?</h2>
+      <p style="max-width:760px;margin:12px auto 0">We blend thoughtful design and elevated essentials so everyday moments feel special. Fast replies and careful packaging included.</p>
+    </section>
+  </main>
+
+  <footer>
+    © 2025 DivineDripLuxe · All rights reserved · <a href="https://www.instagram.com/divinedripluxe" target="_blank">@divinedripluxe</a>
+  </footer>
+
+  <script>
+    function toggleMenu(){document.getElementById('navLinks').classList.toggle('show')}
+  </script>
+</body>
+</html>
